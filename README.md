@@ -3,10 +3,15 @@ Update Server
 
 A server for application updates.
 
-The server depends on PostgreSQL.
-
 The protocol is inspired by Google's Omaha client+server,
 but is modernized and simplified.
+
+Dependencies
+============
+
+* Rust
+* Linux
+* PostgreSQL
 
 Getting started
 ===============
