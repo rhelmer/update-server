@@ -6,6 +6,10 @@ A server for application updates.
 The protocol is inspired by Google's Omaha client+server,
 but is modernized and simplified.
 
+It should be simple to implement new clients in any language, but there is
+a [supported client](https://github.com/rhelmer/update-client#readme)
+available.
+
 Dependencies
 ============
 
