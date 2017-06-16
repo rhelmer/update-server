@@ -1,0 +1,9 @@
+[package]
+name = "firefox-update-client"
+version = "0.1.0"
+authors = ["Robert Helmer <rhelmer@rhelmer.org>"]
+
+[dependencies]
+hyper = "0.11.0"
+futures = "0.1.14"
+tokio-core = "0.1.8"
