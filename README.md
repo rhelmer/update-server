@@ -10,7 +10,6 @@ Dependencies
 ============
 
 * Rust
-* Linux
 * PostgreSQL
 
 Getting started
