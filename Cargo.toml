@@ -1,5 +1,5 @@
 [package]
-name = "firefox-update-server"
+name = "update-server"
 version = "0.1.0"
 authors = ["Robert Helmer <rhelmer@rhelmer.org>"]
 

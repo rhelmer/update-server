@@ -1,7 +1,7 @@
-Firefox Update Server
-=====================
+Update Server
+=============
 
-A server for Firefox updates.
+A server for application updates.
 
 The server depends on PostgreSQL.
 
@@ -30,7 +30,7 @@ The server expects an HTTP form POST with a JSON document:
 
 ```
 {
-    "product": "Firefox",
+    "product": "your_app",
     "version": 666,
     "platform": "macOS",
     "locale": "en-US"
