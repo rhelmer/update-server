@@ -12,8 +12,10 @@ Getting started
 ===============
 
 # Create database and load schema.
-`createdb updates`
-`psql -f schema.sql updates`
+```
+createdb updates
+psql -f schema.sql updates
+```
 
 # Load sample data.
 `psql -f sample_data.sql updates`
