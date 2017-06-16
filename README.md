@@ -52,15 +52,15 @@ of available updates along with a request ID:
 ```
 {
     "available_updates": {
-        "blocklist": {
-            "url": "https://localhost:8080/src/blocklist_v1.json",
+        "my_important_data": {
+            "url": "https://localhost:8080/src/important_data_v1.json",
             "hash_function": "sha512",
             "hash_value": "abc123",
             "size": 1234,
             "version": "1.0"
         },
-        "gecko_media_plugins": {
-            "url": "https://localhost:8080/src/gmp_v1.json",
+        "my_important_binary_blob": {
+            "url": "https://localhost:8080/src/important_binary_v2.zip",
             "hash_function": "sha512",
             "hash_value": "321cba",
             "size": 4321,
