@@ -61,13 +61,14 @@ fn main() {
         let content_type = "application/json".parse::<Mime>().unwrap();
 
         // FIXME mock update response for now.
+        // This will come from the DB, soon.
         let update = Update {
             update_type: "blocklist".to_string(),
             url: "http://localhost:8080/src/blah.zip".to_string(),
             hash_function: "sha512".to_string(),
             hash_value: "abc123".to_string(),
             size: 1024,
-            version: 1000,
+            version: 1001,
         };
         let json_response = serde_json::to_string(&update).unwrap();
 
