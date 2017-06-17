@@ -3,8 +3,7 @@ Update Server
 
 A server for application updates.
 
-The protocol is inspired by Google's Omaha client+server,
-but is modernized and simplified.
+The protocol is inspired by Google's (Omaha protocol)[https://github.com/google/omaha/blob/master/doc/ServerProtocolV3.md] but is modernized and simplified.
 
 It should be simple to implement new clients in any language, but there is
 a [supported client](https://github.com/rhelmer/update-client#readme)
@@ -55,22 +54,22 @@ of available updates along with a request ID:
 
 ```
 {
-    "available_updates": {
-        "my_important_data": {
-            "url": "https://localhost:8080/src/important_data_v1.json",
-            "hash_function": "sha512",
-            "hash_value": "abc123",
-            "size": 1234,
-            "version": "1.0"
+    "available_updates": [
+        { "update_type": "my_important_data",
+          "url": "https://localhost:8080/src/important_data_v1.json",
+          "hash_function": "sha512",
+          "hash_value": "abc123",
+          "size": 1234,
+          "version": "1.0"
         },
-        "my_important_binary_blob": {
-            "url": "https://localhost:8080/src/important_binary_v2.zip",
-            "hash_function": "sha512",
-            "hash_value": "321cba",
-            "size": 4321,
-            "version": "2.0"
+        { "update_type": "my_important_binary_blob",
+          "url": "https://localhost:8080/src/important_binary_v2.zip",
+          "hash_function": "sha512",
+          "hash_value": "321cba",
+          "size": 4321,
+          "version": "2.0"
         }
-    },
+    ],
     "request_id": "xyz321"
 }
 ```
@@ -98,6 +97,4 @@ indicate success or failure to download and apply updates:
 }
 ```
 
-The client sends back the server-defined request ID, allowing tracking
-of individual updates. The server will record these in to the database.
-
+The client sends back the server-defined request ID, which the server will record.
