@@ -1,5 +1,5 @@
 [package]
-name = "update-server"
+name = "update_server"
 version = "0.1.0"
 authors = ["Robert Helmer <rhelmer@rhelmer.org>"]
 
