@@ -10,40 +10,43 @@ use iron::status;
 use iron::mime::Mime;
 
 
-// FIXME share this with the client.
+// FIXME share all these structs w/ server.
 #[derive(Serialize)]
 struct AppConfig {
-    product: &'static str,
+    product: String,
     version: i32,
-    platform: &'static str,
-    locale: &'static str,
+    platform: String,
+    locale: String,
 }
 
-// FIXME share this with the client.
 #[derive(Serialize, Deserialize, Debug)]
 struct Update {
-    update_type: &'static str,
-    url: &'static str,
-    hash_function: &'static str,
-    hash_value: &'static str,
+    update_type: String,
+    url: String,
+    hash_function: String,
+    hash_value: String,
     size: i32,
     version: i32,
 }
 
-// FIXME share this with the client.
+#[derive(Serialize)]
+struct ResultMessage {
+    update_type: String,
+    download_path: String,
+}
+
 #[derive(Serialize)]
 struct SuccessUpdateStatus {
-    update_type: &'static str,
+    update_type: String,
     version: i32,
 }
 
-// FIXME share this with the client.
 #[derive(Serialize)]
 struct FailedUpdateStatus {
-    update_type: &'static str,
-    url: &'static str,
-    hash_function: &'static str,
-    hash_value: &'static str,
+    update_type: String,
+    url: String,
+    hash_function: String,
+    hash_value: String,
     size: i32,
     version: i32,
     download_path: String,
@@ -59,10 +62,10 @@ fn main() {
 
         // FIXME mock update response for now.
         let update = Update {
-            update_type: "blocklist",
-            url: "http://localhost:8080/src/blah.zip",
-            hash_function: "sha512",
-            hash_value: "abc123",
+            update_type: "blocklist".to_string(),
+            url: "http://localhost:8080/src/blah.zip".to_string(),
+            hash_function: "sha512".to_string(),
+            hash_value: "abc123".to_string(),
             size: 1024,
             version: 1000,
         };
