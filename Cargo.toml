@@ -4,3 +4,8 @@ version = "0.1.0"
 authors = ["Robert Helmer <rhelmer@rhelmer.org>"]
 
 [dependencies]
+iron = "0.5.1"
+serde = "1.0.8"
+serde_derive = "1.0.8"
+serde_json = "1.0.2"
+
