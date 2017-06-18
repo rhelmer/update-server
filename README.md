@@ -1,7 +1,5 @@
-Update Server
-=============
-
-A server for application updates.
+Application Update server
+=========================
 
 The protocol is inspired by Google's (Omaha protocol)[https://github.com/google/omaha/blob/master/doc/ServerProtocolV3.md] but is modernized and simplified.
 
