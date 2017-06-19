@@ -11,24 +11,14 @@ Dependencies
 ============
 
 * Rust
-* PostgreSQL
 
 Getting started
 ===============
 
-# Create database and load schema.
-```
-createdb updates
-psql -f schema.sql updates
-```
-
-# Load sample data.
-`psql -f sample_data.sql updates`
-
 # Build and run.
 `cargo run`
 
-The server is now running on port 9999.
+The server is now running on port 8000.
 
 Protocol
 ========
