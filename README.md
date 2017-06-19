@@ -1,5 +1,4 @@
-Application Update server
-=========================
+# Application Update server
 
 The protocol is inspired by Google's (Omaha protocol)[https://github.com/google/omaha/blob/master/doc/ServerProtocolV3.md] but is modernized and simplified.
 
@@ -7,21 +6,14 @@ It should be simple to implement new clients in any language, but there is
 a [supported client](https://github.com/rhelmer/update-client#readme)
 available.
 
-Dependencies
-============
+## Getting started
 
-* Rust
-
-Getting started
-===============
-
-# Build and run.
+### Build and run.
 `cargo run`
 
 The server is now running on port 8000.
 
-Protocol
-========
+## Protocol
 
 The server expects an HTTP form POST with a JSON document:
 
