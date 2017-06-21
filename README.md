@@ -1,6 +1,6 @@
 # Application Update server
 
-The protocol is inspired by Google's (Omaha protocol)[https://github.com/google/omaha/blob/master/doc/ServerProtocolV3.md] but is modernized and simplified.
+The protocol is inspired by Google's [Omaha protocol](https://github.com/google/omaha/blob/master/doc/ServerProtocolV3.md) but is modernized and simplified.
 
 It should be simple to implement new clients in any language, but there is
 a [supported client](https://github.com/rhelmer/update-client#readme)
