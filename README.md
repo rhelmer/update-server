@@ -1,10 +1,13 @@
-# Application Update server
+# Update server
+
+A server for any type of update (data, binary, application, ...)
 
 The protocol is inspired by Google's [Omaha protocol](https://github.com/google/omaha/blob/master/doc/ServerProtocolV3.md) but is modernized and simplified.
 
 It should be simple to implement new clients in any language, but there is
 a [supported client](https://github.com/rhelmer/update-client#readme)
-available.
+available, which includes examples for how to use it from several popular
+programming languages.
 
 ## Getting started
 
