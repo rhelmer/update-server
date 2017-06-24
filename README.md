@@ -14,7 +14,7 @@ programming languages.
 ### Build and run.
 `cargo run`
 
-The server is now running on port 8000.
+The server is now running on `http://localhost:8000`.
 
 ## Protocol
 
